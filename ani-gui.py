@@ -10,9 +10,14 @@ def searchbar():
     entry = tk.Entry(frametop)
     entry.grid(column=1, row=0)
     Root.grid(column=0, row=0, sticky='w')
+
+notfoundtext = tk.Label(master, text='Begin searching')
+
+
+
+
+#start stuff
 searchbar()
-
-
-
-#Finalize loop
+notfoundtext.pack(anchor='n', side='top')
+#finalize loop
 master.mainloop()
